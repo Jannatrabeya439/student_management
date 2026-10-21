@@ -27,3 +27,5 @@ class StudentRepository:
         if db_user:
             db.delete(db_user)
             db.commit()
+
+            
