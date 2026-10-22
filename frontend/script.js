@@ -1,7 +1,7 @@
 // =========================
 // API URL (Change this)
 // =========================
-const API_URL = "https://practice-session-u3uy.onrender.com";
+const API_URL = "https://student-management-acci.onrender.com";
 const STUDENTS_URL = `${API_URL}/students/`;
 
 // =========================
@@ -47,7 +47,7 @@ async function loadStudents() {
     `;
 
     try {
-        const response = await fetch(STUDENTS_URL);
+        const response = await fetch(STUDENTS_URL+'list');
 
         if (!response.ok) {
             const errorData = await response.json().catch(() => ({}));
